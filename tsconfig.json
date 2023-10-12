@@ -1,0 +1,43 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "lib": ["ES6"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "jsx": "react",
+    "isolatedModules": false,
+    "noImplicitAny": false,
+    "outDir": "./build/tsc-out",
+    "paths": {
+      "@assets": ["./src/assets"],
+      "@app/*": ["./src/app/*"],
+      "@arch/*": ["./src/arch/*"],
+      "@di/*": ["./src/di/*"],
+      "@model/*": ["./src/model/*"],
+      "@service/*": ["./src/service/*"],
+      "@animation/*": ["./src/ui/animation/*"],
+      "@components/*": ["./src/ui/components/*"],
+      "@scenes/*": [  "./src/ui/scenes/*"]
+    },
+    "sourceMap": true,
+    "strict": true,
+    "types": [
+      "react-native",
+      "expect-webdriverio",
+      "jest",
+      "node"
+    ]
+  },
+  "include": [
+    "./e2e/**/*",
+    "./src/**/*.json",
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./babel.config.js",
+    "./jest.config.js",
+    "./metro.config.js"
+  ]
+}

@@ -1,0 +1,22 @@
+diff --git a/node_modules/react-native-fast-image/dist/index.d.ts b/node_modules/react-native-fast-image/dist/index.d.ts
+index 5abb7c9..3664077 100644
+--- a/node_modules/react-native-fast-image/dist/index.d.ts
++++ b/node_modules/react-native-fast-image/dist/index.d.ts
+@@ -1,5 +1,5 @@
+ import React from 'react';
+-import { FlexStyle, LayoutChangeEvent, ShadowStyleIOS, StyleProp, TransformsStyle, ImageRequireSource, AccessibilityProps, ViewProps, ColorValue } from 'react-native';
++import { FlexStyle, LayoutChangeEvent, ShadowStyleIOS, StyleProp, TransformsStyle, Type, AccessibilityProps, ViewProps, ColorValue } from 'react-native';
+ export declare type ResizeMode = 'contain' | 'cover' | 'stretch' | 'center';
+ declare const resizeMode: {
+     readonly contain: "contain";
+@@ -53,8 +53,8 @@ export interface ImageStyle extends FlexStyle, TransformsStyle, ShadowStyleIOS {
+     opacity?: number;
+ }
+ export interface FastImageProps extends AccessibilityProps, ViewProps {
+-    source?: Source | ImageRequireSource;
+-    defaultSource?: ImageRequireSource;
++    source?: Source | ImageSourcePropType;
++    defaultSource?: ImageSourcePropType;
+     resizeMode?: ResizeMode;
+     fallback?: boolean;
+     onLoadStart?(): void;

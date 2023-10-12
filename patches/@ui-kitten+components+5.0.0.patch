@@ -1,0 +1,24 @@
+diff --git a/node_modules/@ui-kitten/components/devsupport/components/falsyFC/falsyFC.component.d.ts b/node_modules/@ui-kitten/components/devsupport/components/falsyFC/falsyFC.component.d.ts
+index 50a9c88..0a8c04f 100644
+--- a/node_modules/@ui-kitten/components/devsupport/components/falsyFC/falsyFC.component.d.ts
++++ b/node_modules/@ui-kitten/components/devsupport/components/falsyFC/falsyFC.component.d.ts
+@@ -1,5 +1,5 @@
+ import React from 'react';
+-export declare type RenderProp<Props = {}> = (props?: Props) => React.ReactElement;
++export declare type RenderProp<Props = {}> = React.FC<Props> | '' | false | null | undefined;
+ export declare type FalsyFCProps<Props = {}> = Props & {
+     component?: RenderProp<Props>;
+     fallback?: React.ReactElement;
+diff --git a/node_modules/@ui-kitten/components/devsupport/components/falsyText/falsyText.component.d.ts b/node_modules/@ui-kitten/components/devsupport/components/falsyText/falsyText.component.d.ts
+index 8d4b76c..2260ab9 100644
+--- a/node_modules/@ui-kitten/components/devsupport/components/falsyText/falsyText.component.d.ts
++++ b/node_modules/@ui-kitten/components/devsupport/components/falsyText/falsyText.component.d.ts
+@@ -2,7 +2,7 @@ import React from 'react';
+ import { RenderProp } from '../falsyFC/falsyFC.component';
+ import { TextProps } from '../../../ui/text/text.component';
+ export interface FalsyTextProps extends Omit<TextProps, 'children'> {
+-    component?: RenderProp<TextProps> | React.ReactText;
++    component?: React.ReactText | RenderProp<TextProps>;
+ }
+ /**
+  * Helper component for optional text properties.

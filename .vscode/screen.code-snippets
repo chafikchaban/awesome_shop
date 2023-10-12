@@ -1,0 +1,122 @@
+{
+	"Prepare .container.tsx code": {
+		"prefix": "cont",
+		"body": [
+			"import { IScreenView, ScreenViewContainer } from '@service/navigation/screen-view';",
+			"",
+			"import { $1, I$1VM } from './$2.component';",
+			"import { $1VM } from './$2.vm';",
+			"",
+			"interface RouteParams {",
+			"",
+			"}",
+			"",
+			"export class $1Container extends ScreenViewContainer<I$1VM, RouteParams> {",
+			"",
+			"  protected vm: I$1VM = new $1VM();",
+			"",
+			"  protected get view(): IScreenView<I$1VM> {",
+			"    return $1;",
+			"  }",
+			"}",
+			""
+		],
+		"description": "Prepare .container.tsx code"
+	},
+	"Prepare .component.tsx code": {
+		"prefix": "comp",
+		"body": [
+			"import React from 'react';",
+			"import { StyleSheet } from 'react-native';",
+			"import { observer } from 'mobx-react';",
+			"import { Divider } from '@ui-kitten/components';",
+			"",
+			"import { IScreenView, IScreenVM } from '@service/navigation/screen-view';",
+			"import { DataView, DataViewState } from '@components/data-view.component';",
+			"import { BackAction, NavigationBar } from '@components/navigation-bar';",
+			"import { SafeAreaLayout } from '@components/safe-area-layout.component';",
+			"",
+			"export interface I$1VM extends IScreenVM {",
+			"  loading: boolean;",
+			"}",
+			"",
+			"export const $1: IScreenView<I$1VM> = observer(({ vm }) => {",
+			"",
+			"  return (",
+			"    <SafeAreaLayout style={styles.safeArea}>",
+			"      <NavigationBar",
+			"        title='$1'",
+			"        accessoryLeft={BackAction}",
+			"      />",
+			"      <Divider />",
+			"      <DataView state={vm.loading ? DataViewState.LOADING : DataViewState.DATA}>",
+			"      </DataView>",
+			"    </SafeAreaLayout>",
+			"  );",
+			"});",
+			"",
+			"const styles = StyleSheet.create({",
+			"  safeArea: {",
+			"    flex: 1,",
+			"  },",
+			"});",
+			""
+		],
+		"description": "Prepare .component.tsx code"
+	},
+	"Prepare .vm.ts code": {
+		"prefix": "vm",
+		"body": [
+			"import { computed, observable } from 'mobx';",
+			"",
+			"import { I$1 } from './$2.model';",
+			"import { I$1VM } from './$2.component';",
+			"",
+			"export class $1VM implements I$1VM {",
+			"",
+			"  @observable private model?: I$1;",
+			"",
+			"  @computed public get loading(): boolean {",
+			"    return !this.model;",
+			" }",
+			"",
+			"  public onMount = (): void => {",
+			"    // no-op",
+			" };",
+			"}",
+			""
+		],
+		"description": "Prepare .vm.ts code"
+	},
+	"Prepare .model.ts code": {
+		"prefix": "model",
+		"body": [
+			"export interface I$1 {",
+			"",
+			"}",
+			""
+		],
+		"description": "Prepare .model.ts code"
+	},
+	"Log Debug": {
+		"prefix": "logd",
+		"body": [
+			"this.log.debug('${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',`${1:message}`)$0"
+		],
+		"description": "Placeholder for a default debug log. Remember to `lazyInject` `ILogService`!"
+	},
+	"Log Warning": {
+		"prefix": "logw",
+		"body": [
+			"this.log.debug('${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',`${1:message}`)$0"
+		],
+		"description": "Placeholder for a default warning log. Remember to `lazyInject` `ILogService`!"
+	},
+	"Log Error": {
+		"prefix": "loge",
+		"body": [
+			"this.log.debug('${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',`${1:message}`)$0"
+		],
+		"description": "Placeholder for a default warning log. Remember to `lazyInject` `ILogService`!"
+	},
+}

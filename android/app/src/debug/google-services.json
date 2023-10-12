@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "792279139979",
+    "firebase_url": "https://vetiplan-pet-parent-app.firebaseio.com",
+    "project_id": "vetiplan-pet-parent-app",
+    "storage_bucket": "vetiplan-pet-parent-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792279139979:android:b6544d255c41f140",
+        "android_client_info": {
+          "package_name": "com.awesome.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792279139979-79lljjafhidfvu9djtcg538vq21iul3i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBplCJ1cj-dz59OFko5DoXP5BYsVO3e45k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792279139979-79lljjafhidfvu9djtcg538vq21iul3i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "792279139979-9jlfgcphld6mu5ii3k39uamuoqgbcdjp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.awesome.shop"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792279139979:android:98dd06d5c3f96c150f768e",
+        "android_client_info": {
+          "package_name": "com.awesome.shop.testing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792279139979-79lljjafhidfvu9djtcg538vq21iul3i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBplCJ1cj-dz59OFko5DoXP5BYsVO3e45k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792279139979-79lljjafhidfvu9djtcg538vq21iul3i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "792279139979-9jlfgcphld6mu5ii3k39uamuoqgbcdjp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.awesome.shop"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

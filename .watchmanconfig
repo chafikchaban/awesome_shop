@@ -1,0 +1,10 @@
+{
+  "ignore_dirs": [
+    "./.github",
+    "./.vscode",
+    "./android",
+    "./build",
+    "./ios",
+    "./scripts"
+  ]
+}
