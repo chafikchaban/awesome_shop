@@ -1,4 +1,5 @@
 <h1 align="center">
+ <img alt="ppa logo" src="https://github.com/chafikchaban/awesome_shop/assets/30408070/3eb76b99-67e0-474b-b0b2-874e11a5b5ce" width="240px"/><br/>
   Awesome Shop App
 </h1>
 <p align="center">just another ecommerce mobile app demo</p>
